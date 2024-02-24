@@ -1,2 +1,7 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import button from '$styles/button.module.css';
+</script>
+
+<button class={button.primary}>Primary</button>
+<button class={button.error}>Error</button>
+<button class="{button.primary} {button.floating}">Floating Primary</button>

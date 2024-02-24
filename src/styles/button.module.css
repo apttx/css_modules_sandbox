@@ -1,0 +1,28 @@
+.base {
+	border: none;
+	background: none;
+	padding-inline: 1em;
+	padding-block: 0.5em;
+}
+
+.primary {
+	composes: base;
+	background-color: cornflowerblue;
+}
+
+.error {
+	composes: base;
+	background-color: crimson;
+}
+
+.floating {
+	composes: base;
+	composes: subtle from '$styles/shadows.module.css';
+	padding-inline: 2em;
+	padding-block: 1em;
+}
+
+.unused {
+	composes: base;
+	background-color: aquamarine;
+}
